@@ -122,8 +122,8 @@ public class TechJobs {
 
         if (someJobs.isEmpty()){
             System.out.println("No Results");
-        }
-            for(HashMap<String, String> job : someJobs) {
+        }else {
+            for (HashMap<String, String> job : someJobs) {
 
 
                 System.out.println("\n*****");
@@ -131,8 +131,9 @@ public class TechJobs {
                 System.out.println("name: " + job.get("name"));
                 System.out.println("employer: " + job.get("employer"));
                 System.out.println("location: " + job.get("location"));
-                System.out.println("core competency: " + job.get("core competency") );
+                System.out.println("core competency: " + job.get("core competency"));
                 System.out.println("*****");
             }
+        }
     }
 }
